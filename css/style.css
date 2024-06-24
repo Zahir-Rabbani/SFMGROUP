@@ -1062,10 +1062,11 @@ footer {
     padding-top: 2rem;
   }
   section.supplier .right .explore{
-    width: 162px;
+    width: 172px;
+    margin-left: 8px;
   }
   section.supplier .right .view-all{
-    width: 170px;
+    width: 172px;
   }
   section.footer .container {
     flex-direction: column;
