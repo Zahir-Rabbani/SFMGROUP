@@ -960,7 +960,7 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   section.hero .hero-image {
     right: -235px;
     top: 150px;
@@ -989,6 +989,16 @@ footer {
 
   section.category .card-wrapper p{
     font-size: 0.8rem;
+  }
+  section.about-us .btn-wrapper .explore{
+    width: 160px;
+  }
+  section.about-us .btn-wrapper .view-all{
+    width: 160px;
+  }
+  section.category .service-card{
+    width: 140px;
+    height: 140px;
   }
 
   section.solution{
@@ -1023,7 +1033,7 @@ footer {
   }
   section.fature-section .main .card{
        margin-bottom: 1rem;
-       width: 180px;
+       width: 130px;
        height: 180px;
   }
   section.fature-section .main{
@@ -1039,7 +1049,6 @@ footer {
   }
   section.supplier .left h1{
     font-size: 1.3rem;
-    margin-bottom: 15px;
     margin-left: 20px;
     text-align: center;
   }
@@ -1051,7 +1060,12 @@ footer {
     width: 95%;
     padding-top: 2rem;
   }
-
+  section.supplier .right .explore{
+    width: 162px;
+  }
+  section.supplier .right .view-all{
+    width: 170px;
+  }
   section.footer .container {
     flex-direction: column;
     padding: 0.5rem;
