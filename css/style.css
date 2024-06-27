@@ -1531,7 +1531,7 @@ footer .moveUp{
   .meesage_form{
     display: flex;
     flex-direction: column;
-    height: 790px;
+    height: auto;
   }
   .contact{
     display: flex;
