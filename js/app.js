@@ -57,7 +57,7 @@ function scroll() {
 
  $(document).ready(function(){
     $('.food-slider').slick({
-       autoplay:true,
+      autoplay:true,
       slidesToShow:5,
       slidesToScroll:1,
       prevArrow:".prev-btn",
@@ -66,21 +66,46 @@ function scroll() {
          {
             breakpoint:992,
             settings:{
-             slidesToShow:2,
+             slidesToShow:3,
             }
          },
          {
           breakpoint:768,
           settings:{
            slidesToShow:2,
-          }
-       }
+         }
+
+        }
       ]
  
     });
  
     $('.nav-trigger').click(function(){
       $('.site-content-wrapper').toggleClass('scaled');
-   })
+   });
  });
+
+ let mybutton = document.getElementById("moveUp");
+
+ 
+ 
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+
+ function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
 

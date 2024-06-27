@@ -50,8 +50,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Open-sans";
-  height: 4000px;
+  font-family: "Raleway-regular";
 }
 .container {
   width: 100%;
@@ -157,17 +156,21 @@ body {
 }
 .nav-background .mobile-nav ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 .nav-background .mobile-nav ul li {
   margin-bottom: 1rem;
 }
 .nav-background .mobile-nav ul li a {
   text-decoration: none;
-  color: var(--secondary);
-  font-family: "Raleway-medium";
+  color: var(--ternary);
+  font-family: "Raleway-SemiBold";
 }
 .nav-background .mobile-nav ul li a:hover {
-  color: var(--primary);
+  background-color: red;
+  color: var(--heaven);
+  border-radius: 8px;
 }
 .nav-background .contact,
 .nav-background .time {
@@ -233,21 +236,83 @@ nav {
 nav .top {
   padding: 0rem 0;
 }
+nav .top .navbar{
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
 nav .top .navbar a {
+  /* transition: all 0.3s;  */
+  float: left;
   font-family: "Raleway-SemiBold";
-  font-size: 1rem;
-  text-decoration: none;
+  font-size: 16px;
   color: var(--ternary);
-  padding: 1rem 1rem;
-  transition: all 0.3s;
+  text-align: start;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 nav .top .navbar a.active {
   color: var(--danger);
 }
 nav .top .navbar a:hover {
-  color: var(--danger);
+  color: var(--heaven);
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: var(--ternary);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: "Raleway-SemiBold";
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+  color: var(--heaven);
+  border-radius: 8px;
+}
+.dropdown:hover .dropdown-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+.fa-caret-down{
+  width: 20px;
+  height: 20px;
+}
 .hero {
   margin-top: 135px;
   width: 100%;
@@ -346,8 +411,9 @@ section.about-us .article-wrapper{
   margin-right: -2rem;
 }
 section.about-us .article-wrapper .card:first-child {
-  background: #e8ddb4;
-  width: 60%;
+  width: 50%;
+  color: var(--ternary);
+  text-align: justify;
 }
 section.about-us .article-wrapper .card {
   margin-right: 2rem;
@@ -360,12 +426,18 @@ section.about-us .article-wrapper .card {
 }
 section.about-us .article-wrapper .card img {
   width: 100%;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
 }
 section.about-us .article-wrapper .card .card-content {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
+section.about-us .article-wrapper .card .card-content h2{
+  font-size: 2rem;
+  font-family: "Raleway-bold";
+  margin-bottom: 1rem;
+}
 section.about-us .article-wrapper .card .card-content p {
   line-height: 2rem;
   font-family: "Raleway-regular";
@@ -484,6 +556,19 @@ section.about-us .btn-wrapper .view-all {
   color: var(--ternary);
   opacity: 0.8;
 }
+.solution-statement{
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+.solution-statement p{
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: var(--ternary);
+  opacity: 0.8;
+  line-height: 2rem;
+  font-family: "Raleway-regular";
+}
 .solution .solution-button {
   padding-top: 5rem;
   width: 25%;
@@ -507,6 +592,7 @@ section.about-us .btn-wrapper .view-all {
   height: 560px;
   width: 370px;
   margin-right: 10px;
+  margin-bottom: 1rem;
   background: var(--heaven);
   border: 1px solid var(--pure);
   border-bottom-left-radius: 5px;
@@ -725,6 +811,62 @@ section.brand .food-slider .food-card .product-image img {
   padding: 1rem 0;
 }
 
+.pages-supplier {
+  width: 100%;
+  height: 150px;
+  background-color: var(--danger);
+  padding: 1rem 0;
+  align-items: center;
+}
+.pages-supplier .left {
+  width: 50%;
+  padding-top: 2rem;
+}
+.pages-supplier .right {
+  padding-top: 4rem;
+}
+.pages-supplier h1 {
+  font-size: 2rem;
+  font-family: "Raleway-Medium";
+  color: var(--heaven);
+  max-width: 90%;
+  padding: 2rem 0;
+}
+
+.pages-supplier .right .explore {
+  width: 260px;
+  height: 50px;
+  border: none;
+  background-color: var(--primary);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--heaven);
+  border: 1px solid var(--blue);
+  font-family: "Raleway-Bold";
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.pages-supplier .right .explore:hover {
+  background-color: var(--blue);
+}
+
+.pages-supplier .right .view-all {
+  width: 260px;
+  height: 50px;
+  border: none;
+  background-color: var(--heaven);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--secondary);
+  font-family: "Raleway-Bold";
+  cursor: pointer;
+}
+.pages-supplier .right .view-all:hover {
+  background-color: var(--blue);
+  color: var(--heaven);
+}
+
 .supplier {
   width: 100%;
   height: 250px;
@@ -733,7 +875,7 @@ section.brand .food-slider .food-card .product-image img {
   align-items: center;
 }
 .supplier .left {
-  width: 60%;
+  width: 45%;
   padding-top: 2rem;
 }
 .supplier .right {
@@ -748,13 +890,14 @@ section.brand .food-slider .food-card .product-image img {
 }
 
 .supplier .right .explore {
-  width: 200px;
+  width: 260px;
   height: 50px;
   border: none;
   background-color: var(--primary);
   border-radius: 5px;
   font-size: 1rem;
   color: var(--heaven);
+  border: 1px solid var(--blue);
   font-family: "Raleway-Bold";
   margin-right: 1rem;
   cursor: pointer;
@@ -764,19 +907,20 @@ section.brand .food-slider .food-card .product-image img {
 }
 
 .supplier .right .view-all {
-  width: 200px;
+  width: 260px;
   height: 50px;
   border: none;
   background-color: var(--heaven);
   border: 1px solid var(--blue);
   border-radius: 5px;
   font-size: 1rem;
-  color: var(--danger);
+  color: var(--secondary);
   font-family: "Raleway-Bold";
   cursor: pointer;
 }
 .supplier .right .view-all:hover {
   background-color: var(--blue);
+  color: var(--heaven);
 }
 .supplier .left .input-wrap {
   width: 450px;
@@ -888,6 +1032,17 @@ footer {
   border-top: 1px solid var(--heaven);
 }
 
+footer .moveUp{
+  width: 54px;
+  height: 54px;
+  float: right;
+  position: relative;
+  top: -2rem;
+  right: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 @media (max-width: 992px) {
   .nav-trigger {
     display: block;
@@ -898,7 +1053,7 @@ footer {
   }
 
   section.hero {
-    margin-top: -4rem;
+    margin-top: 4rem;
   }
   section.hero .hero-image {
     right: -160px;
@@ -920,6 +1075,42 @@ footer {
     margin-right: 0;
     margin-bottom: 4rem;
   }
+  section.solution .container .card{
+    width: 330px;
+  }
+  section.solution .container .card img{
+    width: 100%;
+    height: 470px;
+    border-radius: 8px;
+  }
+  section.solution .solution-footer .right{
+    margin: auto;
+  }
+
+  section.supplier .left h1{
+    font-size: 1.3rem;
+    margin-left: 20px;
+  }
+  section.supplier .left{
+    width: 45%;
+  }
+  section.supplier .right{
+    width: 45%;
+  }
+  section.supplier .left .input-wrap{
+    width: 85%;
+    margin-left: 1.9rem;
+  }
+  section.supplier .right{
+    margin-top: 0px;
+  }
+  section.supplier .right .explore{
+    width: 172px;
+    margin-left: 8px;
+  }
+  section.supplier .right .view-all{
+    width: 172px;
+  }
   footer .box h3,
   ul {
     padding: 1rem;
@@ -931,33 +1122,91 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .about-meal .about-meal-wrap {
-    flex-direction: column;
+  .nav-trigger {
+    display: block;
   }
-  .about-meal .about-meal-wrap img {
-    width: 100%;
-    margin-bottom: 2rem;
+  header.topbar,
+  nav {
+    display: none;
   }
 
-  section.our-services .card-wrapper {
+  section.hero {
+    margin-top: 4rem;
+  }
+  section.hero .hero-image {
+    right: -160px;
+    top: 100px;
+  }
+  .top-products .slider-btn {
+    display: none !important;
+  }
+  section.about-meal h2 {
+    padding: 1rem;
+  }
+  section.about-meal p {
+    padding: 1rem;
+  }
+  .latest-news .article-wrapper {
     flex-direction: column;
   }
-  section.our-services .card-wrapper .service-card {
-    margin-bottom: 6rem;
-  }
-  footer .container {
-    flex-direction: column;
-  }
-  footer .box {
-    text-align: left;
+  .latest-news .article-wrapper .card {
     margin-right: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
-  footer .box:nth-child(3) h3 {
-    text-align: left;
+  section.category .service-card{
+    width: 158px;
+    height: 158px;
   }
-  footer .box:nth-child(3) > div {
-    display: block;
+  section.solution .container .card{
+    width: 330px;
+  }
+  section.solution .container .card img{
+    width: 100%;
+    height: 470px;
+    border-radius: 8px;
+  }
+  section.solution .solution-footer .right{
+    margin: auto;
+  }
+  section.fature-section .main{
+    padding-top: 1rem;
+  }
+  section.fature-section .main .card{
+    margin-bottom: 1rem;
+    width: 187px;
+    height: 187px;
+  }
+  section.supplier .left h1{
+    font-size: 1.3rem;
+    margin-left: 20px;
+  }
+  section.supplier .left{
+    width: 45%;
+  }
+  section.supplier .right{
+    width: 45%;
+  }
+  section.supplier .left .input-wrap{
+    width: 95%;
+  }
+  section.supplier .right{
+    margin-top: 0px;
+  }
+  section.supplier .right .explore{
+    width: 142px;
+    font-size: 13px;
+  }
+  section.supplier .right .view-all{
+    width: 142px;
+    font-size: 13px;
+  }
+  footer .box h3,
+  ul {
+    padding: 1rem;
+  }
+  footer .box p,
+  ul {
+    padding: 1rem;
   }
 }
 
@@ -985,7 +1234,7 @@ footer {
     width: 95%;
   }
   section.category .card-wrapper {
-    margin-left: 50px;
+    margin-left: 15px;
   }
 
   section.category .card-wrapper p{
@@ -998,8 +1247,8 @@ footer {
     width: 160px;
   }
   section.category .service-card{
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
   }
 
   section.solution{
@@ -1014,6 +1263,7 @@ footer {
   section.solution .container .card img{
     width: 100%;
     height: 470px;
+    border-radius: 8px;
   }
   section.solution .container{
     flex-direction: column;
@@ -1058,7 +1308,7 @@ footer {
     margin-left: 1.9rem;
   }
   section.supplier .right{
-    width: 95%;
+    width: 91%;
     padding-top: 2rem;
   }
   section.supplier .right .explore{
@@ -1077,3 +1327,42 @@ footer {
     padding-left: 2rem;
   }
 }
+
+/* start Pages */
+.pageHero{
+  width: 100%;
+  height: 400px;
+  margin-top: 150px;
+  overflow: hidden;
+}
+.pageHero img{
+  object-fit: cover;
+  width: 100%;
+}
+
+ ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+} 
+
