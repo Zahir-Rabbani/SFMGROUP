@@ -1553,17 +1553,8 @@ footer .moveUp{
     width: 100%;
   }
 }
-@media (max-width: 410px) {
-  section.category .service-card{
-    width: 100px;
-    height: 100px;
-  }
-  section.supplier .right{
-    margin-left: 8px;
-  }
-}
 
-@media (max-width: 409px) {
+@media (max-width: 414px) {
   section.category .service-card{
     width: 100px;
     height: 100px;
