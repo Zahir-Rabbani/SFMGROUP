@@ -1554,6 +1554,16 @@ footer .moveUp{
   }
 }
 
+@media (max-width: 409px) {
+  section.category .service-card{
+    width: 100px;
+    height: 100px;
+  }
+  section.supplier .right{
+    margin-left: 8px;
+  }
+}
+
 /* start Pages */
 .pageHero{
   width: 100%;
