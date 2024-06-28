@@ -1020,7 +1020,7 @@ section.brand .food-slider .food-card .product-image img {
   font-size: 1rem;
 }
 .meesage_form .left .input-wrap {
-  width: 450px;
+  width: 95%;
   background: var(--heaven);
   display: flex;
   padding: 0.3rem;
@@ -1233,7 +1233,7 @@ footer .moveUp{
     padding-top: 0.2rem;
   }
   .meesage_form .left .input-wrap{
-    width: 400px;
+    width: 95%;
   }
   footer .box h3,
   ul {
@@ -1550,7 +1550,7 @@ footer .moveUp{
     width: 90%;
   }
   .meesage_form .right .message input{
-    width: 100%;
+    width: 96%;
   }
 }
 
