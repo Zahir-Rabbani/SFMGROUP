@@ -1564,7 +1564,7 @@ footer .moveUp{
   }
 }
 
-@media (min-width: 390px) {
+@media (max-width: 390px) {
   section.fature-section .main .card{
     margin-bottom: 1rem;
     width: 120px;
@@ -1581,7 +1581,7 @@ footer .moveUp{
     width: 145px;
   }
 }
-@media (min-width: 393px) {
+@media (max-width: 393px) {
   section.fature-section .main .card{
     margin-bottom: 1rem;
     width: 118px;
@@ -1599,7 +1599,7 @@ footer .moveUp{
   }
 }
 
-@media (min-width: 384px) {
+@media (max-width: 384px) {
   section.fature-section .main .card{
     margin-bottom: 1rem;
     width: 118px;
