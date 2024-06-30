@@ -851,7 +851,7 @@ section.brand .food-slider .food-card .product-image img {
   cursor: pointer;
 }
 .pages-supplier .right .explore:hover {
-  background-color: var(--blue);
+  background-color: var(--footer);
 }
 
 .pages-supplier .right .view-all {
@@ -867,7 +867,7 @@ section.brand .food-slider .food-card .product-image img {
   cursor: pointer;
 }
 .pages-supplier .right .view-all:hover {
-  background-color: var(--blue);
+  background-color: var(--footer);
   color: var(--heaven);
 }
 
@@ -907,7 +907,7 @@ section.brand .food-slider .food-card .product-image img {
   cursor: pointer;
 }
 .supplier .right .explore:hover {
-  background-color: var(--blue);
+  background-color: var(--footer);
 }
 
 .supplier .right .view-all {
@@ -923,7 +923,7 @@ section.brand .food-slider .food-card .product-image img {
   cursor: pointer;
 }
 .supplier .right .view-all:hover {
-  background-color: var(--blue);
+  background-color: var(--footer);
   color: var(--heaven);
 }
 
@@ -993,7 +993,7 @@ section.brand .food-slider .food-card .product-image img {
   cursor: pointer;
 }
 .meesage_form .right .view-all:hover {
-  background-color: var(--blue);
+  background-color: var(--footer);
   color: var(--heaven);
 }
 .meesage_form .right .message{
