@@ -1564,6 +1564,59 @@ footer .moveUp{
   }
 }
 
+@media (min-width: 390px) {
+  section.fature-section .main .card{
+    margin-bottom: 1rem;
+    width: 120px;
+    height: 180px;
+  }
+  section.category .service-card{
+    width: 100px;
+    height: 100px;
+  }
+  section.supplier .right .explore{
+    width: 145px;
+  }
+  section.supplier .right .view-all{
+    width: 145px;
+  }
+}
+@media (min-width: 393px) {
+  section.fature-section .main .card{
+    margin-bottom: 1rem;
+    width: 118px;
+    height: 180px;
+  }
+  section.category .service-card{
+    width: 100px;
+    height: 100px;
+  }
+  section.supplier .right .explore{
+    width: 140px;
+  }
+  section.supplier .right .view-all{
+    width: 140px;
+  }
+}
+
+@media (min-width: 384px) {
+  section.fature-section .main .card{
+    margin-bottom: 1rem;
+    width: 118px;
+    height: 180px;
+  }
+  section.category .service-card{
+    width: 100px;
+    height: 100px;
+  }
+  section.supplier .right .explore{
+    width: 140px;
+  }
+  section.supplier .right .view-all{
+    width: 140px;
+  }
+}
+
 /* start Pages */
 .pageHero{
   width: 100%;
