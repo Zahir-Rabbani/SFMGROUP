@@ -613,6 +613,7 @@ section.about-us .btn-wrapper .view-all {
 }
 .solution .card img {
   width: 370px;
+  border-radius: 10px;
 }
 .solution .card h2 {
   text-align: center;
